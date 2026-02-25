@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { Suspense, useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import {
@@ -260,7 +260,7 @@ function ProjectCard({ project, onDelete }: { project: Project; onDelete: () => 
     );
 }
 
-export default function ProjectsPage() {
+function ProjectsContent() {
     const { projects, createProject, deleteProject, saveProjects } = useProjectStore();
     const [showModal, setShowModal] = useState(false);
     const [filter, setFilter] = useState<'all' | StageKey | 'done'>('all');
@@ -426,5 +426,13 @@ export default function ProjectsPage() {
                 </div>
             )}
         </div>
+    );
+}
+
+export default function ProjectsPage() {
+    return (
+        <Suspense fallback={<div style={{ padding: 24, fontSize: 13, color: 'var(--text-muted)' }}>로딩 중...</div>}>
+            <ProjectsContent />
+        </Suspense>
     );
 }
