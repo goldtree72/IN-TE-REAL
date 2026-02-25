@@ -61,7 +61,7 @@ export default function ReportPage() {
         )
     );
 
-    const maxStageCount = Math.max(...stats.stageCompletion.map(s => s.count), 1);
+    const maxStageCount = Math.max(...stats.stageCompletion.map((s: { count: number }) => s.count), 1);
 
     const handleExport = (projectId: string) => {
         const project = projects.find(p => p.id === projectId);
@@ -121,7 +121,7 @@ export default function ReportPage() {
                     단계별 진행 현황 (파이프라인 퍼널)
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                    {stats.stageCompletion.map(s => (
+                    {stats.stageCompletion.map((s: any) => (
                         <div key={s.key} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                             <div style={{ width: 40, fontSize: 10, fontWeight: 800, color: s.color }}>{s.label}</div>
                             <div style={{ flex: 1, height: 22, background: 'rgba(200,200,200,0.2)', borderRadius: 6, overflow: 'hidden', position: 'relative' }}>
