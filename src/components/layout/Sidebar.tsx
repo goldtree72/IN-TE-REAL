@@ -179,7 +179,7 @@ export default function Sidebar() {
                     style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', borderRadius: 10, display: 'block' }}
                 />
                 <Image
-                    src="/Logo_Rotate_Alpha.png"
+                    src="/Logo_Rotate_Alpha.png?v=5"
                     alt="IN-TE-REAL Logo Mark"
                     width={210} height={92} priority
                     className="spin-logo-anim"
