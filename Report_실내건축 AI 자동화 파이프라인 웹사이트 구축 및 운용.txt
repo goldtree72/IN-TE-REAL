@@ -1,0 +1,285 @@
+[보고서] 실내건축 AI 자동화 파이프라인 웹사이트 구축 및 운영 지침서
+
+1. 프로젝트의 전략적 배경 및 비전: 에이전트 중심의 패러다임 시프트
+
+현대 실내건축 설계와 소프트웨어 공학은 단순한 수동 코딩 및 설계를 넘어, 자율적 에이전트를 지휘하는 '지능형 오케스트레이션'으로의 거대한 패러다임 시프트를 맞이하고 있습니다. 본 프로젝트는 개발자 및 아키텍트를 단순한 작업자가 아닌, 시스템 전체를 조망하고 제어하는 **'미션 컨트롤 커맨더(Mission Control Commander)'**로 재정의합니다.
+
+단순한 업무 자동화를 넘어, 인간의 직관적인 설계 경험과 AI 에이전트의 자율적 실행 능력이 결합되었을 때 발생하는 시너지는 산업의 병목 현상을 해결하는 핵심 열쇠입니다. 본 플랫폼은 구글 안티그래비티(Google Antigravity)와 같은 최첨단 에이전트 인프라를 통해 기획부터 시공 데이터 생성까지의 전 과정을 통합하며, 이를 통해 고부가가치 비즈니스 솔루션을 창출하는 것을 비전으로 삼습니다. 기술적 비전을 실현하기 위한 첫 단계로, 사용자의 인지 부하를 최소화하고 몰입감을 극대화하는 시각적 디자인 프레임워크를 정립합니다.
+
+
+--------------------------------------------------------------------------------
+
+
+2. 글래스모피즘 및 팬톤 2026 디자인 프레임워크
+
+디지털 소음이 극심한 현대 사회에서 본 플랫폼은 사용자의 '정서적 안정'과 '업무 집중도'를 높이기 위해 팬톤 2026 올해의 색상인 **'클라우드 댄서(Cloud Dancer, #F0EEE9)'**를 핵심 기조색으로 채택합니다. 이는 AI 에이전트가 쏟아내는 복잡한 데이터와 실행 에너지를 수용하는 **'빈 캔버스(Blank Canvas)'**이자, 에이전트의 '양(Yang)의 에너지'를 중화시키는 전략적 토대입니다.
+사이트 디자인 구성 예시
+전체 디자인 설정:
+  톤: "정돈됨, 규율, 컬렉션, 만족감"
+  시각적 아이덴티티:
+    배경색: "플랫 단색 배경(화이트, 그레이 또는 비비드 컬러)"
+    텍스트 색상: "방해되지 않는 심플한 색상"
+    강조 색상: "배치된 오브젝트의 색상"
+    이미지 스타일:
+      특징: "정면 위에서의 시점(플랫 레이), 직각 정렬된 오브젝트, 분해도"
+      형태: "직사각형 그리드 배치"
+      텍스처: "리얼리스틱 사진, 그림자"
+  타이포그래피:
+    제목: "라벨 같은 심플한 산세리프."
+    본문: "캡션 스타일."
+    숫자: "넘버 태그."
+
+2.1 글래스모피즘(Glassmorphism) UI 및 기술 가이드
+
+플랫폼의 UI는 '액체 유리(Liquid Glass)' 개념을 도입하여, 물리적 재질감을 가진 요소들이 인터페이스 위를 부유하는 듯한 미래지향적 감각을 제공합니다.
+
+UI 핵심 요소	기술적 사양 (Technical Specification)	전략적 역할 및 비고
+프로스티드 투명도	backdrop-filter: blur(10px ~ 30px)	배경과 전경의 명확한 분리 및 시각적 계층화
+반투명 레이어	rgba(240, 238, 233, 0.2)	클라우드 댄서 기반의 화이트 틴트로 가독성 확보
+미세 테두리	1px solid rgba(255, 255, 255, 0.3)	동적 그라데이션 위에서 패널의 경계를 명확히 정의
+하드웨어 가속	transform: translateZ(0)	고밀도 디스플레이에서 부드러운 스크롤 및 상호작용 보장
+레이어 깊이	z-index 전략 및 소프트 드롭 섀도우	'미션 컨트롤' 패널의 공간적 입체감 형성
+
+2.2 색상 팔레트 및 UX 전략
+
+* Foundational Neutral: #F0EEE9(Cloud Dancer)를 배경 및 기본 표면에 사용하여 디지털 명상이 가능한 환경 조성.
+* Powdered Pastels: #F2E191(Lemon Icing), #F5E1E2(Raindrops on Roses)를 활용한 마이크로 애니메이션 및 비활성 상태 강조.
+* Light & Shadow: #144320(Baltic Sea), #163610(Quiet Violet)을 터미널 배경 및 고대비 텍스트 레이어에 적용.
+* Tropic Tonalities: #F53D6B(Paradise Pink), #FF8D00(Bright Marigold)을 CTA(Call-to-Action) 버튼 및 활성 에이전트 인디케이터에 매칭.
+
+이러한 심미적 설계는 사용자의 '디지털 인지 ergonomics'를 최적화하여, 정교한 인터페이스 위에서 구동될 시스템의 심장부인 구글 안티그래비티 아키텍처와 완벽한 조화를 이룹니다.
+
+
+--------------------------------------------------------------------------------
+
+
+3. 구글 안티그래비티 기반 에이전트 인프라 설계
+
+구글 안티그래비티(Google Antigravity)는 에이전트 중심 개발 환경으로서, 인간 사용자가 복잡한 업무를 자율 에이전트에게 위임하고 모니터링하는 데 최적화되어 있습니다.
+
+3.1 이원화된 인터페이스 아키텍처
+
+* 에디터 뷰(Editor View): 실시간 코드 편집 및 인라인 자연어 명령(Cmd+I)을 처리하는 동기적 작업 환경.
+* 매니저 뷰(Manager View): 여러 워크스페이스에 흩어진 에이전트들을 동시 다발적으로 관리하는 비동기적 '미션 컨트롤' 센터.
+
+3.2 MCP(Model Context Protocol) 및 아티팩트 시스템
+
+* MCP(Model Context Protocol): 외부 데이터와 도구를 연결하는 'USB-C 포트' 역할을 합니다. 특히 '점진적 공개(Progressive Disclosure)' 방식을 통해 에이전트가 필요한 도구 정의만 로드하게 함으로써 토큰 사용량을 절감하고 대기 시간을 98% 이상 단축합니다. 시스템은 MCP Host(안티그래비티), Client(매개체), Server(도구 노출 프로그램)로 구성되어 보안성이 강화된 연결을 지원합니다.
+* 아티팩트(Artifacts): 에이전트가 생성한 실행 계획서, 스크린샷, 브라우저 녹화물 등은 '체크포인트(Checkpoints)' 기반의 자산입니다. 이는 단순한 결과 공유를 넘어 에러 발생 시 특정 시점으로 되돌아가는 '타임머신 디버깅'을 가능케 하여 사용자 신뢰를 구축합니다.
+
+
+--------------------------------------------------------------------------------
+
+
+4. 실내건축 AI 자동화 'IntArch(가칭)' 파이프라인
+
+본 사이트의 핵심 비즈니스 가치는 기획 공정을 현재 사무실에서 운용되는 시간 대비최대 90% 단축하는 5단계 AI 자동화 파이프라인, **'IntArch(가칭)'**에 있습니다.
+
+1. 공간 조닝(Zoning): 건축계획각론, 건축법규, 각종 지침들을 참조하여 사용자가 업로드한 평면 이미지를 분석하여 최적의 공간 배치 및 실 구성을 제안합니다. 기획 초기 단계의 복잡한 레이아웃 고민을 AI의 연산 능력으로 해결합니다. 대안을 3가지 정도로 제시하여 비교, 분석한 결과를 나타내고 최종안을 선택할 수 있도록 합니다.
+ - 예시 프롬프트 
+──────────────────────────────────────────────
+STEP 1 — 복도 유형 선택 (사용자 응답 필요)
+──────────────────────────────────────────────
+아래 두 가지 복도 유형 중 하나를 선택해 주세요.
+
+  A) 단일편복도 (Single-Loaded Corridor)
+     - 복도 한쪽에만 실 배치
+     - 채광·환기 유리, 동선 단순
+     - 병원·학교·호텔 등에 적합
+
+  B) 중복도 (Double-Loaded Corridor)
+     - 복도 양쪽에 실 배치
+     - 면적 효율 높음, 자연채광 제한
+     - 사무소·기숙사·아파트 등에 적합
+
+──────────────────────────────────────────────
+STEP 2 — 공간 정보 입력
+──────────────────────────────────────────────
+선택 완료 후 아래 정보를 입력해 주세요.
+
+  - 건물 용도: [예: 소규모 의원 / 어린이집 / 사무소]
+  - 공간 목록: (실명, 존 분류, 개략 면적)
+    예)
+    [
+      { "name": "대기실",  "zone": "public",  "area_m2": 18 },
+      { "name": "접수",    "zone": "public",  "area_m2": 10 },
+      { "name": "진료실1", "zone": "core",    "area_m2": 12 },
+      ...
+    ]
+
+──────────────────────────────────────────────
+STEP 3 — 도면 생성 (AI 자동 수행)
+──────────────────────────────────────────────
+{
+  "zoning_logic": {
+    "corridor_type": "[STEP 1 선택값: single-loaded | double-loaded]",
+    "hierarchy": "Public → Core → Support → Service",
+
+    "public_zone_rules": {
+      "internal_walls": "NONE — no partition walls within the public zone",
+      "corridor_boundary": "COMPLETELY OPEN — absolutely no wall, door, or opening
+                            between the public zone and the corridor.
+                            The room/corridor horizontal divider line must begin
+                            at the Public/Core boundary, NOT at the building edge.",
+      "public_core_wall": "Vertical wall at Public/Core boundary drawn for
+                           room depth only (y: top wall → corridor divider start).
+                           Must NOT extend through the corridor zone."
+    },
+
+    "entry_rules": {
+      "position": "FIXED at bottom exterior wall of the public zone, left side.
+                   (Approximately 1/4 from the left edge of the public zone.)",
+      "lock": "Do NOT move or relocate the entry under any circumstance.",
+      "symbol": "Door swing arc opening inward + vertical entry arrow below"
+    },
+
+    "corridor_width": {
+      "dimension_on_drawing": "Show net clear width (순폭) only — no legal references"
+    },
+
+    "constraint": "Do NOT alter, move, or resize any existing walls or boundaries."
+  },
+
+  "dimension_rules": {
+    "basis": "Wall centerlines (CL). Corridor: CL dim + net clear annotated together.",
+    "tick_style": "Architectural Tick '/' slash at every dim endpoint. No arrows.",
+    "text_position": {
+      "horizontal": "Text ABOVE dim line (~8px offset). Never on or below the line.",
+      "vertical":   "Text LEFT of dim line (rotated -90°, ~8px offset)."
+    },
+    "row_spacing": "Minimum 24px between parallel dim rows to prevent text overlap.",
+    "horizontal_layout": {
+      "position": "ABOVE the plan",
+      "row_1": "Individual room/zone widths (detail)",
+      "row_2": "Total building width (overall)"
+    },
+    "vertical_layout": {
+      "position": "LEFT of the plan",
+      "col_1": "Room depth + corridor width — CL and net clear",
+      "col_2": "Total building depth (overall)"
+    },
+    "unit": "mm"
+  },
+
+  "visual_style": {
+    "type": "2D Architectural Floor Plan",
+    "linework": "Thick: exterior/structural walls · Medium: room partitions · Thin: furniture symbols",
+    "coloring": "Soft pastel per zone — Public=coral, Core=mint, Support=warm yellow,
+                 Service=lavender, Corridor=warm gray",
+    "no_legal_text": "Do NOT include any building code references, law articles,
+                      or regulatory citations anywhere in the drawing."
+  },
+
+  "technical_elements": {
+    "legend_kr": "Korean 범례 box — bottom-right. Color bars + zone names + corridor width only.",
+    "north_arrow": true,
+    "scale_bar": true,
+    "zone_brackets": "Hierarchy brackets above plan",
+    "output": "ONE high-clarity 2D image"
+  }
+}
+
+2. 컬러링(Coloring): 도면 구조를 엄격히 유지하면서 내추럴, 모던, 아트데코 등 다양한 마감재 컨셉을 즉각적으로 시각화합니다.
+ - 프롬프트 예시
+{
+"visual_style": "Photorealistic top-down orthographic 3D render, [Warm, luxurious, ivory and cream palette].",
+"materials": {
+"flooring": "[Realistic light oak wood planks] with grain texture and [beige plush rugs].",
+"walls_furniture": "Creamy off-white matte walls, [chenille and linen fabrics], light wood veneers."
+},
+"lighting_depth": {
+"type": "Soft natural daylight with warm glow.",
+"special_effect": "Extreme Ambient Occlusion (AO) for deep, dark contact shadows in corners and under furniture for hyper-realistic depth."
+},
+"styling_props": "High-detail decor: [pillows, books, ceramic vases, and kitchenware] with individual shadows.",
+"technical_overlay": "Overlay original black CAD dimension lines and numeric values only. Remove all Hangul and text labels."
+}
+
+3. 아이소메트릭(Isometric): 2D 도면에서 입체적인 공간감을 즉시 생성하여 동선 계획 및 공간 구성을 입체적으로 검토합니다.
+ - 프롬프트 예시
+{
+"perspective_and_view": "Isometric 3D cutaway view, 45-degree top-right angle (dollhouse perspective), no roof showing full interior.",
+"subject_and_structure": "Modern Korean apartment interior. 2600mm wall height. Dark charcoal load-bearing walls contrasting with creamy white textured partition walls.",
+"rendering_style": "Ultra-photorealistic architectural CGI, Octane & V-Ray render quality, 8K resolution, professional presentation.",
+"materials_and_lighting": "PBR realistic materials (natural oak flooring, fabric, glass). Natural sunlight streaming in, soft shadows cast on a clean neutral gray background plane."
+}
+추가로 원하는 사항이 있다면 실제로 제시된 도면에서 특정 지점에서 특정 방향으로 바라보았을 때 생성되는 Perspective View도 생성이 되도록 하였으면 합니다.
+
+4. 믹스보드 및 컨셉(Mixboard & Concept): 구글 믹스보드를 활용하여 **'3D 매싱 구조(Structure)'**와 **'참조 이미지(Reference)'**를 결합합니다. 이를 통해 기하학적 형태를 유지하면서 새로운 미학적 뷰를 합성해냅니다.
+이부분에 대한 프롬프트 예시는 아직 정리가 되지 않았습니다. 최적의 결과를 위한 프롬프트가 필요한 사항입니다.
+
+5. AI 렌더링(AI Rendering): 복잡한 V-Ray 설정 없이도 PBR(물리 기반 렌더링)과 심도(Depth of Field) 효과가 적용된 실사 수준의 결과물을 도출합니다. 오전, 오후, 저녁 등 시간대별 조명 연출이 수 초 내에 완료됩니다.
+ - 프롬프트 예시
+{
+"task_type": "AI Photorealistic Image-to-Image Enhancement",
+"master_priority": "ABSOLUTE GEOMETRY & CAMERA LOCK - No structural changes, No camera move.",
+"enhancement_target": "[강조할 자재 질감 또는 공간의 분위기]",
+"visual_rules": {
+"materials": "PBR(Physically Based Rendering) textures, realistic wood/stone/fabric, natural reflections.",
+"lighting": "Natural daylight, soft ray-traced shadows, global illumination, NO added light fixtures.",
+"ceiling_lock": "Maintain original ceiling shape and fixtures exactly. Do NOT add new lights."
+},
+"technical_specs": {
+"quality": "8k resolution, RAW photo, DSLR architectural photography, sharp focus.",
+"rendering": "Octane/V-Ray style, physically-correct shading, no artificial glow."
+},
+"negative_prompt": "CGI, 3D render look, sketch, distorted geometry, added structures, extra lights, LED strips, blurry, low quality."
+}
+
+
+--------------------------------------------------------------------------------
+
+
+5. 보안 아키텍처 및 멤버십 수익화 전략
+
+사용자의 상상력과 데이터를 보호하기 위해 견고한 보안 프레임워크와 지속 가능한 멤버십 모델을 구축합니다.
+
+5.1 보안 프레임워크
+
+* Auth0 기반 신원 관리: 고도의 보안을 위해 'Authorization Code Grant with PKCE' 모델을 적용하여 세션 가로채기를 방지하고 안전한 사용자 인증을 제공합니다.
+* Row-Level Security(RLS): 데이터베이스 레이어에서 사용자가 본인의 구독 등급에 허용된 데이터와 에이전트에게만 접근할 수 있도록 엄격히 제어합니다.
+
+5.2 모네타이징 및 엔타이틀먼트 로직(Entitlement Logic)
+
+* Stripe 기반 구독 모델: Next.js 15와 Stripe Checkout을 연동하여 등급별 멤버십을 관리합니다.
+* 엔타이틀먼트 로직: Stripe의 price_id를 검증하여 등급별로 접근 가능한 AI 스킬을 차등화합니다. 예컨대 'Pro' 등급 사용자에게만 '보안 강화(Security Hardening)' 및 '고성능 렌더링' 스킬을 오픈하는 정교한 권한 제어를 수행합니다.
+
+
+--------------------------------------------------------------------------------
+
+
+6. 안티그래비티 스킬(Skills) 및 명령어 구현 가이드
+
+AI 에이전트의 스킬은 '두뇌(Brain)' 역할을 하는 SKILL.md와 '손(Hands)' 역할을 하는 Scripts 폴더로 이원화되어 관리됩니다.
+
+* 스킬 위치의 이원화:
+  * 워크스페이스 특정 스킬: .agent/skills/
+  * 글로벌 공통 스킬: ~/.gemini/antigravity/skills/
+* 스킬 작성 원칙: SKILL.md 상단에 YAML 프런트매터를 작성하여 에이전트가 스킬의 용도를 명확히 인식하게 합니다. 에이전트에게 스크립트 실행 전 반드시 --help 명령어를 사용하도록 지시하여 컨텍스트 효율성을 극대화합니다.
+* 슬래시 명령어 세트:
+  * /init: 프로젝트 스캐폴딩 및 CLAUDE.md 생성.
+  * /plan: 복잡한 아키 스프린트 실행 전 아티팩트 기반 계획 수립.
+  * /setup-ci-cd: 스택을 자동 감지하여 배포 파이프라인 구축.
+* Human-in-the-Loop: 에이전트의 코드 실행 모드는 토큰 효율성을 높이지만, 중요 결정 단계에서는 인간 아키텍트의 승인을 거치는 협업 모델을 준수합니다.
+
+
+--------------------------------------------------------------------------------
+
+
+7. 미래 확장성: 건축입면 및 외부 투시도, 시공 연계형 AI 자동 도면 제작 
+
+본 플랫폼의 최종 목표는 시각적 컨셉을 넘어 실제 시공이 가능한 데이터로 확장하는 것입니다.
+
+* 건축 인테리어 이외 건축물의 외부 매스 또는 방위별 입면도를 토대로 전체 건물의 스타일을 제시하고 각종 외장 재료를 적용하여 미리보는 건축물을 제시합니다.
+* 산업 병목 현상 해결: 현재의 아이소메트릭 및 컨셉 뷰를 바탕으로 CAD 도면(2D/3D)을 자동 생성하여, 기획에서 설계 도서 작성으로 넘어가는 구간의 병목을 완전히 제거합니다.
+* 디지털 트윈 및 물리 시뮬레이션: UI 내에 Matter.js 물리 엔진을 통합하여 '안티그래비티' 환경을 시뮬레이션함으로써, 설계 데이터가 시공 현장의 디지털 트윈과 연동되는 인터페이스를 구축합니다. 이는 설계의 정밀도와 현장 정합성을 획기적으로 높일 것입니다.
+
+
+--------------------------------------------------------------------------------
+
+
+8. 결론 및 실천 제언
+
+본 지침서가 제시하는 실내건축 AI 자동화 플랫폼은 인간의 창의적 직관과 에이전트의 자율적 오케스트레이션이 결합된 결정체입니다. 구글 안티그래비티의 강력한 인프라와 클라우드 댄서의 심미적 안정감은 단순한 효율성을 넘어, 아키텍트가 본질적인 디자인 가치에 집중할 수 있는 '인지적 자유'를 제공할 것입니다.
+
+성공적인 구현을 위해 기술적 완결성뿐만 아니라, 사용자의 창의적 자산을 보호하는 보안 체계와 지속 가능한 비즈니스 모델의 정착을 최우선 과제로 삼아야 합니다. 본 플랫폼이 실내건축 산업의 새로운 표준이 되어 미래의 공간 혁신을 선도하기를 기대합니다.
